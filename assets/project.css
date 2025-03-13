@@ -1,5 +1,8 @@
 html {
   overflow-anchor: none;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  min-width: 300px;
 }
 
 #large-screen-nav {
@@ -7,8 +10,6 @@ html {
   width: 100%;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
   background-color: #427fb0;
   padding-top: 15px;
   transition: 0.25s;
@@ -77,9 +78,9 @@ body {
   color: #000000;
   font-size: 400;
   line-height: 1.5;
-  width: auto;
   background-color: #797977;
   margin: 0;
+  padding: 0;
 }
 
 main {
@@ -91,13 +92,10 @@ main {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-rendering: optimizeLegibility;
-  text-size-adjust: 100%;
-  -webkit-text-size-adjust: auto;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  position: relative;
 }
 
 .container h1 {
@@ -121,7 +119,18 @@ main {
   text-align: left;
 }
 
-.container p {
+.container h3 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+  -webkit-text-size-adjust: antialiased;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  text-align: left;
+}
+
+.container p, li {
   font-size: 20px;
   font-weight: 400;
   -webkit-text-size-adjust: antialiased;
@@ -130,7 +139,24 @@ main {
   max-width: 1000px;
 }
 
+ul, ol{
+  padding-left: 25px;
+}
+
+#title{
+  display: flex;
+  padding-top: 20px;
+  
+}
+
 hr {
   width: 200%;
   margin-left: -50px;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .container {
+      max-width: 960px;
+  }
 }
