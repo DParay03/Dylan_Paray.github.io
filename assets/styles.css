@@ -2,6 +2,7 @@ html {
   overflow-anchor: none;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  min-width: 300px;
 }
 
 #large-screen-nav {

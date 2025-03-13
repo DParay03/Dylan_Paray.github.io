@@ -11,7 +11,6 @@ html {
   position: fixed;
   z-index: 1;
   background-color: #427fb0;
-  padding-top: 15px;
   transition: 0.25s;
   border-color: #000000;
   display: flex;
@@ -152,6 +151,10 @@ ul, ol{
 hr {
   width: 200%;
   margin-left: -50px;
+}
+
+img{
+  max-width: 640px;
 }
 
 
