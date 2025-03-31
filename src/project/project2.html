@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="../../assets/styles/project.css" />
+</head>
+
+<body>
+    <nav id="large-screen-nav">
+        <ul>
+            <li>
+                <a aria-label="Navigate to the Home Page" href="../index.html">Return to Home Page</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="title">
+            <div class="container">
+                <h1>Project Two: Setting up/Reinforcing my Homelab</h1>
+            </div>
+        </section>
+        <section id="Introduction">
+            <div class="container">
+                <h2>Introduction</h2>
+                <p>
+                    The establishment of a homelab is essential for one's career in the
+                    field of IT. Allowing one to play around and learn current market
+                    technology. This environment allows a user full freedom to play
+                    around with it without breaking production environments.
+                </p>
+                <h3>Benefits of a Homelab Include:</h3>
+                <ul>
+                    <li>
+                        Hands-on Learning - Reinforce your theoritical knowledge gained from certifications and learn
+                        new current market technologies.
+                    </li>
+                    <li>
+                        Testing and Experimentation - Allows you to test tools, scripts,
+                        patches, and configurations before implementing in production.
+                    </li>
+                    <li>
+                        Cost-effectiveness - Can be used to self-host various services and
+                        avoid subscription-services like Goggle Cloud.
+                    </li>
+                    <li>Privacy - Allows you to controls your own data.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="Hardware & Software Setup">
+            <div class="container">
+                <h2>Step 1: Hardware & Software Setup:</h2>
+                <p>To start off, I want to understand how the layout of my homelab should be. I used Packet Tracer to
+                    create a logical topology:</p>
+                <h3>1. Logical Topology</h3>
+                <img src="../../assets/img/project2_img/logicalLayout.png" alt="components-used" />
+                <p>Given my limited budget, I decided to keep my lab minimalistic, going with a Router on a Stick
+                    approach.</p>
+                <h3>2. Equipment Use:</h3>
+                <ul>
+                    <li>Router: Ubiquiti EdgeRouter 4</li>
+                    <li>Switch: MikroTik CRS326-24G-2S+IN</li>
+                    <li>PC: HP Premium EliteDesk 800 G3 Business Mini Desktop Performance PC</li>
+                    <li>PC: MLLSE Mini PC M2 Air Mini Desktop Computer with Intel Gemini Lake N4000</li>
+                    <li>PC: Dell Inc. Lattitude E5530 non-vPro</li>
+                </ul>
+            </div>
+        </section>
+        <section id="Network Configuration">
+            <div class="container">
+                <h2> Step 2: Network Configuration</h2>
+                <h3>1. Basic Connectivity</h3>
+                <p>To start off, I decided to focus on basic connectivity, ensuring that all my devices can ping to each
+                    other.</p>
+                <p>I adapted a top-bottom approach, ensuring that my router was configure, then my switch, then
+                    mini-PC's.</p>
+                <h4>Guide use to initially setup Router:<h4>
+                    <iframe src="https://www.youtube.com/embed/IwfzjJQVcsI" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                <h4>Guide use to initially setup Switch:</h4>
+                    <a class="project-card-link" href="https://www.jeffgeerling.com/blog/2023/setting-mikrotik-10-gbps-switch-first-time" target="_blank" rel="noopener">View Project</a>
+          </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -99,7 +99,7 @@ main {
 
 .container h1 {
   font-size: 40px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 600;
   margin-bottom: 10px;
   -webkit-text-size-adjust: antialiased;
@@ -129,7 +129,19 @@ main {
   text-align: left;
 }
 
-.container p, li {
+.container h4 {
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+  -webkit-text-size-adjust: antialiased;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  text-align: left;
+}
+
+.container p,
+li {
   font-size: 20px;
   font-weight: 400;
   -webkit-text-size-adjust: antialiased;
@@ -138,14 +150,14 @@ main {
   max-width: 1000px;
 }
 
-ul, ol{
+ul,
+ol {
   padding-left: 25px;
 }
 
-#title{
+#title {
   display: flex;
   padding-top: 20px;
-  
 }
 
 hr {
@@ -153,13 +165,28 @@ hr {
   margin-left: -50px;
 }
 
-img{
+img {
   max-width: 640px;
 }
 
+iframe {
+  width: 560px;
+  height: 315px;
+}
+
+a{
+  font-size: 20px;
+}
+
+a:hover{
+  font-weight: bold;
+  color: #f37171;
+  transition: 0.3s;
+  cursor: pointer;
+}
 
 @media screen and (min-width: 1024px) {
   .container {
-      max-width: 960px;
+    max-width: 960px;
   }
 }

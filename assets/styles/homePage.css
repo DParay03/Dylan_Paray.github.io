@@ -220,7 +220,7 @@ hr {
   display: block;
   box-shadow: 0px, 0px, 15px;
   margin-bottom: 30px;
-  max-width: 840px;
+  width: 840px;
   height: 300px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
@@ -271,6 +271,7 @@ hr {
 .project-card-link {
   font-size: 22px;
   color: rgb(0, 81, 255);
+  margin-top: 20px;
 }
 
 #skills > .container > ul {
@@ -332,6 +333,7 @@ hr {
 @media (max-width: 1000px) {
   .project-card {
     height: auto;
+    width: auto;
   }
 
   .project-img {
